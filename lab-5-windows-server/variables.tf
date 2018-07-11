@@ -24,7 +24,7 @@ variable "path_to_private_key" {
   description = "path to the private that will be used to authenticate to the EC2 instances to provision"
 }
 
-variable "public_security_group_id" {
+variable "terraform_client_security_group_id" {
   description = "security group ID of the instance running the terraform client"
 }
 

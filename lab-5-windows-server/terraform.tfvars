@@ -29,7 +29,7 @@ windows_server_2016_base_amis {
 # leave commented at first, so that you can see terraform asking for a value when running terraform apply
 instance_type = "m5.large" 
 
-public_security_group_id = "sg-0df5f2227c09e01d4"
+terraform_client_security_group_id = "sg-0df5f2227c09e01d4"
 public_subnet_id = "subnet-0a4ed45b66b2e64a8"
 path_to_private_key = "mykey"
 path_to_public_key = "mykey.pub"
