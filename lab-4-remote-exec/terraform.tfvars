@@ -26,7 +26,7 @@ amis {
 
 instance_type = "t2.small" 
 
-terraform_client_security_group_id = "training-setup-StudentInstanceSecurityGroup-W04LMW7NAY43"
+terraform_client_security_group_id = "sg-0df5f2227c09e01d4"
 public_subnet_id = "subnet-0a4ed45b66b2e64a8"
 path_to_private_key = "mykey"
 path_to_public_key = "mykey.pub"
