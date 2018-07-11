@@ -1,5 +1,10 @@
 variable "aws_region" {}
 
+variable "tags" {
+  description = "A map of tags to add to all resources"
+  type        = "map"
+}
+
 variable "amis" {
   description = "A map of all AMIs per region"
   type = "map"
