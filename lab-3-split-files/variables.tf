@@ -5,3 +5,6 @@ variable "amis" {
   type = "map"
 }
 
+varible "public_subnet_id" {
+  description = "A public subnet"
+}

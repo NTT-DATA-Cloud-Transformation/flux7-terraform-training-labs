@@ -19,6 +19,8 @@ amis {
     ap-southeast-1 = "ami-76144b0a"
 }
 
+public_subnet_id = "subnet-0a4ed45b66b2e64a8"
+
 # leave commented at first, so that you can see terraform asking for a value when running terraform apply
 #instance_type = "t2.small" 
 
