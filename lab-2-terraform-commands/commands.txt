@@ -4,7 +4,7 @@ git clone https://github.com/Flux7Labs/flux7-terraform-training-labs.git
 cd flux7-terraform-training-labs/lab-2-terraform-commands/
 vim instance.tf
 	>> remove access_key and secret-key
-	>> update the region, ami-id and vpc-id
+	>> update the region, ami-id and subnet-id
 	>> review related documentation: https://www.terraform.io/docs/providers/aws/r/instance.html
 terraform init
 terraform plan
