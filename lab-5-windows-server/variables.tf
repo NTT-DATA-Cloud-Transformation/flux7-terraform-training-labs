@@ -28,8 +28,8 @@ variable "public_security_group_id" {
   description = "security group ID of the instance running the terraform client"
 }
 
-variable "terraform_client_subnet_id" {
-  description = "Subnet ID where the terraform client is running"
+variable "public_subnet_id" {
+  description = "Public Subnet ID"
 }
 
 variable "path_to_public_key" {

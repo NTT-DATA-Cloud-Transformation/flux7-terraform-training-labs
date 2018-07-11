@@ -1,5 +1,3 @@
-
-
 #Regions        RHEL AMI IDs    VPC IDs                 Subnet IDs
 #us-east-1      ami-6871a115    vpc-0b6bd82ca3bc855dc   subnet-05ea77400efaa9917
 #us-east-2      ami-03291866    vpc-0739fdd163da8b3ba   subnet-0170daf66eefd25f2
@@ -13,7 +11,6 @@
 #sa-east-1      ami-b0b7e3dc    vpc-0beb4d39a9c76b001   subnet-09b1a4e1896049678
 #ap-southeast-1 ami-76144b0a    vpc-02d80c2a56c6b91e7   subnet-0a4ed45b66b2e64a8
 
-
 aws_region = "ap-southeast-1"
 
 tags {
@@ -26,14 +23,14 @@ rhel_7_5_amis {
 }
 
 windows_server_2016_base_amis {
-    us-east-1 = "ami-0327667c"
+    ap-southeast-1 = "ami-053d3a79"
 }
 
 # leave commented at first, so that you can see terraform asking for a value when running terraform apply
 instance_type = "m5.large" 
 
 public_security_group_id = "sg-0df5f2227c09e01d4"
-terraform_client_subnet_id = "subnet-0a4ed45b66b2e64a8"
+public_subnet_id = "subnet-0a4ed45b66b2e64a8"
 path_to_private_key = "mykey"
 path_to_public_key = "mykey.pub"
 instance_username = "ec2-user"
