@@ -11,8 +11,8 @@ terraform plan
 terraform validate
 terraform apply
 terraform plan
-lab-2-terraform-commands]$ aws ec2 describe-instances --region ap-southeast-1 --output table --query 'Reservations[*].Instances[*].[InstanceId, State.Name]'
+aws ec2 describe-instances --region ap-southeast-1 --output table --query 'Reservations[*].Instances[*].[InstanceId, State.Name]'
 cat terraform.tfstate
 terraform destroy
-lab-2-terraform-commands]$ aws ec2 describe-instances --region ap-southeast-1 --output table --query 'Reservations[*].Instances[*].[InstanceId, State.Name]'
+aws ec2 describe-instances --region ap-southeast-1 --output table --query 'Reservations[*].Instances[*].[InstanceId, State.Name]'
 cat terraform.tfstate
