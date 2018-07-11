@@ -6,3 +6,6 @@ unzip terraform_0.11.7_linux_amd64.zip
 export PATH=~/terraform/:$PATH
 terraform --version
 terraform --help
+
+export PATH=/usr/local/aws/bin:$PATH
+aws --version
