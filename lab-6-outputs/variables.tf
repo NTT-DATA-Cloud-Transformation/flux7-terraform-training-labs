@@ -10,12 +10,6 @@ variable "rhel_7_5_amis" {
   type = "map"
 }
 
-variable "windows_server_2016_base_amis" { 
-  description = "A map of all Windows Server 2016 Base AMIs per region"
-  type = "map"
-}
-
-
 variable "instance_type" {
   description = "EC2 instance type"
 }
