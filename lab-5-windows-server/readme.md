@@ -18,4 +18,14 @@ RDP to the server and verify there is a file in c:\test.txt
 
 
 
+cat terraform.tfstate | grep -i password_data
+
+echo '<password here>' | base64 -d > password_data_enc.txt
+  
+openssl rsautl -decrypt -inkey mykey -in password_data_enc.txt -out decrypted.txt
+
+cat decrypted.txt
+
+
+
 Run: terraform destroy
