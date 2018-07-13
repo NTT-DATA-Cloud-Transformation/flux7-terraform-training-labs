@@ -40,10 +40,3 @@ variable "instance_username" {
   description = "username that will be used to authentication to the EC2 instances to provision"
 }
 
-variable "windows_bootstrap_username" {
-  description = "Windows bootstrap username"
-}
-
-#variable "windows_bootstrap_password" {
-#  description = "Windows bootstrap password"
-#}

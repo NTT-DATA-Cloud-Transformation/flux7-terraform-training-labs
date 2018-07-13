@@ -36,6 +36,4 @@ path_to_public_key = "mykey.pub"
 instance_username = "ec2-user"
 
 
-windows_bootstrap_username = "terraform"
-
 
