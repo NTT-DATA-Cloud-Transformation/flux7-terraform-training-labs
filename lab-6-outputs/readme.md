@@ -6,6 +6,8 @@ Go to ~/flux7-terraform-training-labs/lab-6-outputs
 
 Create the file backend.tf as shown in the doc: https://www.terraform.io/docs/backends/types/s3.html
 
+Use the following S3 key: terraform/backend/apps/app1/dev/terraform.tfstate
+
 Run terraform init and approve the copy of the local state file to S3
 
 Find the state file in the AWS console, download it to your laptop and read its content
