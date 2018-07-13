@@ -6,7 +6,9 @@ resource "aws_key_pair" "mykey" {
 
 
 resource "aws_instance" "rhel_instance" {
-  ami           = "${lookup(var.rhel_7_5_amis, var.aws_region)}"
+#  ami           = "${lookup(var.rhel_7_5_amis, var.aws_region)}"
+  ami = "${data.aws_ami.rhel_7_5_latest.image_id}"
+
   subnet_id = "${var.public_subnet_id}"
   associate_public_ip_address = true
   instance_type = "${var.instance_type}"
